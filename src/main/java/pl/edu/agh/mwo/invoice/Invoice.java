@@ -14,9 +14,9 @@ public class Invoice {
 	}
 
 	public void addProduct(Product product, Integer quantity) {
-		if (quantity == 0)
+		if (quantity == 0 || quantity <0)
 		{
-		throw IllegalArgumentException();	
+		throw new IllegalArgumentException();	
 		}
 		
 		for (int i = 0; i < quantity; i++) {
