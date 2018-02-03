@@ -9,7 +9,7 @@ public class Invoice {
 	private Map<Product, Integer> products;
 
 	public void addProduct(Product product) {
-		products.put(product, 0);
+		//products.put(product, 0);
 	}
 
 	public void addProduct(Product product, Integer quantity) {
@@ -24,7 +24,7 @@ public class Invoice {
 		return null;
 	}
 
-	public BigDecimal getTotal() {
+	public BigDecimal getGrossValue() {
 		return null;
 	}
 }
